@@ -26,7 +26,7 @@
       ]
     },
     {
-      "type": 1,
+      "type": 3,
       "title": "Uptime Kuma",
       "name": "uptime_kuma",
       "note": "Self-hosted monitoring dashboard. Volume mapped to /opt/uptime-kuma.",
@@ -41,7 +41,7 @@
       "env": []
     },
     {
-      "type": 1,
+      "type": 3,
       "title": "File Browser",
       "name": "filebrowser",
       "note": "Lightweight file manager with web interface. Volumes mapped to /opt.",
@@ -56,7 +56,7 @@
       "env": []
     },
     {
-      "type": 1,
+      "type": 3,
       "title": "meTube (yt-dlp frontend)",
       "name": "metube",
       "note": "YouTube downloader with web UI on port 8085. Includes yt-dlp + ffmpeg.",
@@ -71,7 +71,7 @@
       "env": []
     },
     {
-      "type": 1,
+      "type": 3,
       "title": "Weather Map (Meteo)",
       "name": "weather_map",
       "note": "Runs a lightweight OpenWeatherMap dashboard for Raspberry Pi.",
