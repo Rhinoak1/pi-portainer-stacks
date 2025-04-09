@@ -1,0 +1,58 @@
+[
+  {
+    "type": 1,
+    "title": "Nextcloud (Pi Optimized)",
+    "name": "nextcloud_pi",
+    "note": "Volumes are mapped to /opt/nextcloud. Prompts you for DB credentials and system info.",
+    "description": "Deploys a Pi-optimized Nextcloud stack with MariaDB. Includes persistent storage, PUID/PGID, and TZ settings.",
+    "platform": "linux",
+    "categories": ["cloud", "storage", "Raspberry Pi"],
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
+    "repository": {
+      "url": "https://github.com/Rhinoak1/pi-portainer-stacks",
+      "stackfile": "nextcloud_pi/docker-compose.yml"
+    },
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MariaDB root password",
+        "default": "rootpass"
+      },
+      {
+        "name": "MYSQL_DATABASE",
+        "label": "Database name",
+        "default": "nextcloud"
+      },
+      {
+        "name": "MYSQL_USER",
+        "label": "Database user",
+        "default": "nextclouduser"
+      },
+      {
+        "name": "MYSQL_PASSWORD",
+        "label": "Database user password",
+        "default": "strongdbpass"
+      },
+      {
+        "name": "PUID",
+        "label": "User ID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+        "label": "Group ID",
+        "default": "1000"
+      },
+      {
+        "name": "PORT",
+        "label": "Web port",
+        "default": "8080"
+      },
+      {
+        "name": "TZ",
+        "label": "Time zone",
+        "default": "America/Chicago"
+      }
+    ]
+  }
+]
