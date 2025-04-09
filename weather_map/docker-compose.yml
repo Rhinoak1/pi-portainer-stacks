@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  meteo:
+    image: ghcr.io/kuehni-kevin/meteo:latest
+    container_name: meteo
+    restart: unless-stopped
+    ports:
+      - "3003:80"
