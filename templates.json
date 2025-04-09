@@ -2,7 +2,7 @@
   "version": "2",
   "templates": [
     {
-      "type": 1,
+      "type": 3,
       "title": "Nextcloud (Pi Optimized)",
       "name": "nextcloud_pi",
       "note": "Self-hosted cloud server with MariaDB backend. Volumes mapped to /opt/nextcloud.",
