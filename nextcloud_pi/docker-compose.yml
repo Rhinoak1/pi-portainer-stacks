@@ -20,7 +20,7 @@ services:
     container_name: nextcloud_app
     restart: unless-stopped
     ports:
-      - "${PORT}:80"
+      - "8443:80"
     environment:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
