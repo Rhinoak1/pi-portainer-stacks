@@ -11,7 +11,7 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
-      - /var/lib/docker/volumes/876195e34d98fb0d6b50c6a9234afe44f7f7fbdd02994c7f9bc525bd48abb22a/_data:/var/lib/mysql
+      - mariadb_data:/var/lib/mysql
     networks:
       - nextcloud_net
 
@@ -39,3 +39,6 @@ services:
 networks:
   nextcloud_net:
     driver: bridge
+
+volumes:
+  mariadb_data:
