@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   shortpaste:
-    image: ghcr.io/eliask/dockpaste:latest
+    image: katlol/dockpaste:latest
     container_name: shortpaste
     ports:
       - "8090:8000"
